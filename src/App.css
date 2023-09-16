@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.blur-bg {
+  backdrop-filter: blur(3px);
+  height: auto;
+  width: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.activeLink {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, 0.25);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mainLoginInput::-webkit-input-placeholder {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: rgba(133, 133, 135, 1);
+}
+.mainLoginInput::-moz-placeholder {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: rgba(133, 133, 135, 1);
+}
+.mainLoginInput:-ms-input-placeholder {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: rgba(133, 133, 135, 1);
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  right: 16px;
+  top: 16px;
+}
+
+@media only screen and (min-width: 480px) {
+  .score-boxes {
+    transform: translate(0, -40%);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .score-label {
+    margin-right: 8rem;
   }
 }
