@@ -8,7 +8,7 @@ const BooksList = () => {
 
   return (
     <div className="me-2 ms-3" style={{ marginTop: "12vh" }}>
-      {filteredBooks.length > 0 ?
+      {filteredBooks && filteredBooks.length > 0 ?
         filteredBooks.map((book) => (
         <Link to={`/books/${book.id}`}>
           <BookCard key={book.id} book={book} />
